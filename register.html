@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <title>Tigers Taekwondo Club</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class = "ui grid stackable container">
+    <br>
+<nav class="ui top attached tabular menu">
+  <img class="ui image" src="images/logo.png" alt="Logo" height="70">
+  <a class="item" href= "index.html">Welcome</a>
+  <a class="item" href= "competitions.html">Competitions</a>
+  <a class="item" href= "seminar.html">Seminar</a>
+  <a class="active item" href= "register.html">Register</a>
+</nav>
+    
+   <header class="ui sixteen wide column">
+    <h1>Register</h1>
+    <h3>Your Own Opportunity to Awaken Your Inner Tiger</h3>
+      <p>Even though we take great pride in our organisation, please don't feel intimidated. Even with 100+ members our club is still growing and we get newcomers all the time. If you liked any of what you saw don't be afraid to come to class and try it out. The first class is completely free so what are you waiting for?</p>
+    </header>
+<main>
+     <form action="submit.html" method="get" id="booking" class="ui form">
+                    
+                    <div class="inline field">
+                        <label for="name" class="two wide field">Name</label>
+                        <input type="text" name="name" id="name" class="six wide field" autofocus required pattern="[A-Z][a-z]+( [A-Z][a-z]+)*" title="Please enter your name, include proper capitalization">
+                    </div>
+
+                    <div class="inline field">
+                        <label for="email" class="two wide field">Email Address</label>
+                        <input type="email" name="email" id="email" class="six wide field" required pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" title="Please enter a suitable email address">
+                    </div>
+
+                    <p>Have you ever practiced a martial art before?</p>
+                    
+                    <div class="inline field">
+                        <div class="ui radio checkbox"><input type="radio" name="yes" id="yes" value="yes"><label for="yes"> Yes</label></div><br>
+                        <div class="ui radio checkbox"><input type="radio" name="no" id="no" value="no"> <label for="no"> No</label></div>
+                    </div>
+
+                    <div class="inline field">
+                    <label for = "experience" class="two wide field">If so for how many years?</label>
+                    <input type="number" name="experience" id="experience" class="six wide field" title="Please enter how many years of experience you have" min = "1" max = "100">
+                    </div>
+                    
+                    <div class="inline field">
+                    <label for = "dob" class="two wide field">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" class="six wide field" title="Please enter your Date of Birth" required>
+                    </div>
+                    
+                    <div class="inline field">
+                    <label for = "dobok" class="two wide field">Do You Own a Dobok?</label>
+                    <select class="six wide field" title="Do You Own a Dobok?" name="dobok" id="dobok">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    </div>
+         
+                    <p>You're almost there. Just press submit and we'll email you the time and date of the next lesson. And before you go, tell us how you enjoyed our website!</p>
+         
+                    <div class="ui rating" data-max-rating="5"></div>
+         
+                    <div class="inline field">
+                    <button class="ui negative button" type="submit">Join</button>
+                    <button class="ui negative button" type="reset">Clear</button>
+                    </div>
+                             
+                </form>
+</main>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+  crossorigin="anonymous">
+</script>
+<script  src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+<script>$(document).ready(function(){$(".rating").rating();});</script>
+            <br>
+<footer class="ui container">
+    <p style="float: left">Tigers Taewkwondo Club | All Rights Reserved 2022</p>
+    <i class="big twitter icon" style="float: right"></i>
+    <i class="big facebook icon" style="float: right"></i>
+    <i class="big instagram icon" style="float: right"></i>
+</footer>
+</body>
+</html>
+
